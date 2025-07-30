@@ -1,0 +1,55 @@
+Q1 - public class Main {
+    public static void main(String[] args) {
+        int a = 3;
+        int b = 3;
+        if ((1 ^ 1) != 0)
+            a = 1;
+        else
+            b = 2;
+        System.out.println(a + b);
+    }
+}
+Output - 10
+
+Q2 - public class Main {
+    public static void main(String[] args) {
+        int a = 1;
+        while (a < 5) 
+            a = a + 2;
+        System.out.println(a);
+    }
+}
+Output - 5
+
+Q3 - public class Main {
+    public static void main(String[] args) {
+        int result = func(8, 8);
+        System.out.println(result);
+    }
+    public static int func(int a, int b) {
+        if (a != 0 && b != 0 && (a + b) > 0)
+            return a + func(a - 2, b - 2) + b;
+        return a + b;
+    }
+}
+Output - 40
+
+Q4 - public class Main {
+    public static void main(String[] args) {
+        int a = 3, b = 3;
+        if ((1 ^ 1) != 0) 
+            a = 1;
+        else 
+            b = 2;
+        System.out.println(a + b);
+    }
+}
+Output - 5
+
+
+
+
+
+
+
+
